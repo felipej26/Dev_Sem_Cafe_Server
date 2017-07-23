@@ -13,6 +13,11 @@ module.exports = {
 			size: 1000
     },
 
+    sobrenome: {
+      type: 'string',
+      size: 1000
+    },
+
     email: {
       type: 'string',
 			size: 1000
@@ -23,8 +28,9 @@ module.exports = {
 			size: 1000
     },
 
-    idade: {
-      type: 'integer'
+    ip: {
+      type: 'string',
+      size: 15
     }
   }
 };
