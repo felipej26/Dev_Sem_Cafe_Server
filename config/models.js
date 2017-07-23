@@ -30,6 +30,6 @@ module.exports.models = {
   // migrate: 'alter'
 	
 	connection: 'mySQLAdapter',
-	migrate: 'alter'
+	migrate: 'safe'
 	
 };

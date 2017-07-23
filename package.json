@@ -1,11 +1,12 @@
 {
-  "name": "Dev_Sem_Cafe_Server",
+  "name": "dev_sem_cafe_server",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
+    "express": "^4.15.3",
     "grunt": "0.4.5",
     "grunt-contrib-clean": "0.6.0",
     "grunt-contrib-coffee": "0.13.0",
@@ -36,5 +37,9 @@
     "url": "git://github.com/felipej26/Dev_Sem_Cafe_Server.git"
   },
   "author": "Jefferson Felipe",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-npm-install-all": "^0.1.0"
+  }
 }
