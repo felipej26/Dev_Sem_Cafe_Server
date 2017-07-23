@@ -58,3 +58,7 @@ try {
 
 // Start server
 sails.lift(rc('sails'));
+
+const osTmpdir = require('os-tmpdir');
+
+osTmpdir();
