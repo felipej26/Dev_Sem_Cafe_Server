@@ -25,10 +25,6 @@
     "sails-disk": "~0.10.9",
     "sails-mysql": "^0.11.5"
   },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-npm-install-all": "^0.1.0"
-  },
   "scripts": {
     "debug": "node debug app.js",
     "start": "node app.js"
