@@ -140,6 +140,7 @@ html,body {
 /* */
 
 .titulo-blog {
+    display: block;
     text-align: center;
 }
 

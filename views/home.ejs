@@ -25,7 +25,7 @@
     <div class="container">
 
       <header class="titulo-principal">
-        <img class="foto-home" src="images/logotipo.jpg" alt="logo do dev sem café">
+        <img class="foto-home" src="images/logotipo.png" alt="logo do dev sem café">
         
         <ul class="palavras-home">
           <li class="palavra-home eficiencia">Café</li>
@@ -60,29 +60,32 @@
           </div>
 
           <div class="col-lg-4">
-		      <form id="formCadastro" action="documents/guia-de-sobrevivencia-hipster.pdf">
-			      <h2 class="form-signin-heading">Cadastre-se, é de graça!</h2>
+		        <form id="formCadastro" action="documents/Tudo o Que Você Precisa Saber Para Organizar Um Hackaton.pdf">
+			        <h2 class="form-signin-heading">Cadastre-se, é de graça!</h2>
 			
-			      <label for="inputNome" class="sr-only">Nome</label>
-			      <input id="inputNome" class="form-control" placeholder="Nome" required>
+			        <label for="inputNome" class="sr-only">Nome</label>
+			        <input id="inputNome" class="form-control" placeholder="Nome" required>
 			  
-            <label for="inputSobrenome" class="sr-only">Sobrenome</label>
-			      <input id="inputSobrenome" class="form-control" placeholder="Sobrenome" required>
+              <label for="inputSobrenome" class="sr-only">Sobrenome</label>
+			        <input id="inputSobrenome" class="form-control" placeholder="Sobrenome" required>
               
-			      <label for="inputEmail" class="sr-only">Email</label>
-			      <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+			        <label for="inputEmail" class="sr-only">Email</label>
+			        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
 			
-			      <label for="inputOcupacao" class="sr-only">Ocupação</label>
-			      <input id="inputOcupacao" class="form-control" placeholder="Ocupação" required>
+			        <label for="inputOcupacao" class="sr-only">Ocupação</label>
+			        <input id="inputOcupacao" class="form-control" placeholder="Ocupação" required>
 			
-			      <button class="btn btn-lg btn-primary btn-block" onclick="gravar()">Continuar</button>
-		      </form>
+			        <button class="btn btn-lg btn-primary btn-block" onclick="gravar()">Continuar</button>
+		        </form>
           </div>
         </section>
         
+        <div style="display: block;" />
+
+        <hr class="featurette-divider">
+
         <section>
-          <hr class="featurette-divider">
-          <%- partial ('posts/show') %>
+            <%- partial ('posts/show') %>
         </section>
       </main>
       
