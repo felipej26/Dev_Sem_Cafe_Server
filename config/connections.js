@@ -96,6 +96,6 @@ module.exports.connections = {
 		password: '11529d2c',
 		port: 3306,
 		database: 'heroku_5bd884ad6d33dee',
-    timezone: 'utc-3'
+    timezone: 'utc'
 	}
 };
