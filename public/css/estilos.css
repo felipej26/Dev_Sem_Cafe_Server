@@ -1,0 +1,192 @@
+body {
+    background-color: #FFFFFF;
+    font-size: 120%;
+    line-height: 1.5;
+    display: block;
+    flex-wrap: wrap;
+    -webkit-perspective: 6px;
+            perspective: 6px;
+    -webkit-perspective-origin: 50% 160px;
+            perspective-origin: 50% 160px;
+}
+
+form {
+    border: 1px solid #CCC;
+    border-radius: 25px;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 3em;
+    color: black;
+}
+
+main a {
+    color: #851944;
+}
+
+main a:hover,
+main a:focus,
+footer a:focus,
+footer a:hover {
+    color: red;
+}
+
+main p {
+    text-align: justify;
+    margin: 1em 0;
+}
+
+main {
+    flex-grow: 1;
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
+
+html,body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Cafés do header */
+.eficiencia {
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+}
+.boas-praticas {
+    top: 70%;
+    left: 20%;
+    -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(1px) rotate(10deg) scale(.25);
+    opacity: .3;
+}
+.codigo-limpo {
+    top: 45%;
+    left: 25%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.25);
+    opacity: .6;
+}
+.css3 {
+    top: 55%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(5deg) scale(.25);
+    opacity: .6;
+}
+.html5 {
+    top: 30%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    opacity: .6;
+}
+.javascript {
+    top: 15%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(1px) rotate(-5deg) scale(.25);
+}
+.acessibilidade {
+    top: 30%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(3px) rotate(-5deg) scale(.25);
+    opacity: .8;
+}
+.responsivo {
+    top: 40%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(3px) rotate(10deg) scale(.25);
+    opacity: .8;
+}
+.otimizacoes {
+    top: 70%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(-5deg) scale(.25);
+    opacity: .6;
+}
+.agilidade {
+    top: 75%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(1px) rotate(5deg) scale(.25);
+    opacity: .3;
+}
+.design {
+    top: 40%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) rotate(10deg) scale(.25);
+    opacity: .6;
+}
+/* */
+
+.titulo-principal {
+    text-align: center;
+    color: #FFF;
+    padding: 1rem;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: relative;
+}
+
+.foto-home {
+    height: 300px;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+.palavras-home {
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.palavra-home {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    font-size: 400%;
+    color: rgba(255, 127, 127, .5);
+    position: absolute;
+    -webkit-animation: aparece 2s;
+            animation: aparece 2s;
+}
+
+@-webkit-keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}

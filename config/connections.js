@@ -95,7 +95,7 @@ module.exports.connections = {
 		user: 'b5c6f95d699509',
 		password: '11529d2c',
 		port: 3306,
-		database: 'heroku_5bd884ad6d33dee'
+		database: 'heroku_5bd884ad6d33dee',
+    timezone: 'utc'
 	}
-	
 };

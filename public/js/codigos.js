@@ -15,9 +15,7 @@ function gravar() {
 
     xhr.open('POST', 'usuarios', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.onload = function () {
-        alert(this.responseText);
-    };
+    xhr.onload = function () { };
     xhr.send(params);
 
     nome.innerHTML = "";

@@ -18,33 +18,80 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
+	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/estilos.css" rel="stylesheet">
   </head>
   <body>
-	<div class="container">
-        <div class="col-lg-4">
-		  <form>
-			<h2 class="form-signin-heading">Cadastre-se, é de graça!</h2>
-			
-			<label for="inputNome" class="sr-only">Nome</label>
-			<input id="inputNome" class="form-control" placeholder="Nome" required>
-			
-            <label for="inputSobrenome" class="sr-only">Sobrenome</label>
-			<input id="inputSobrenome" class="form-control" placeholder="Sobrenome" required>
 
-			<label for="inputEmail" class="sr-only">Email</label>
-			<input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+    <div class="container">
+
+      <header class="titulo-principal">
+        <img class="foto-home" src="images/logotipo.jpg" alt="logo do dev sem café">
+        
+        <ul class="palavras-home">
+          <li class="palavra-home eficiencia">Café</li>
+          <li class="palavra-home boas-praticas">Café</li>
+          <li class="palavra-home codigo-limpo">Café</li>
+          <li class="palavra-home css3">Café</li>
+          <li class="palavra-home html5">Café</li>
+          <li class="palavra-home javascript">Café</li>
+          <li class="palavra-home acessibilidade">Café</li>
+          <li class="palavra-home responsivo">Café</li>
+          <li class="palavra-home otimizacoes">Café</li>
+          <li class="palavra-home agilidade">Café</li>
+          <li class="palavra-home design">Café</li>
+        </ul>
+      </header>
+
+      <hr class="featurette-divider">
+
+      <main>
+        <section>    
+          <div class="col-lg-8">
+            Depois de quantas xícaras o café já não faz efeito? O Blog Dev sem Café, veio para te dar aquela energia que faltava.
+            <br>
+            <br>
+            Temos como intuito ser o parceiro de quem ama programação.O objetivo é acompanhar os impactos do mundo moderno no 
+            nosso ambiente diário além de informar pessoas que queiram se desenvolver e fazer algo com propósito na área da programação. 
+            Geramos um conteúdo atual e assertivo para a vida dos desenvolvedores que seguem um estilo de vida desbravador, 
+            trazendo assuntos que não vieram ao mundo a passeio e estão ou entrarão no nosso cotidiano.
+            <br>
+            <br>
+            Seja um Dev em eterno desenvolvimento e desenvolva-se com a gente!
+          </div>
+
+          <div class="col-lg-4">
+		    <form action="documents/guia-de-sobrevivencia-hipster.pdf">
+			  <h2 class="form-signin-heading">Cadastre-se, é de graça!</h2>
 			
-			<label for="inputOcupacao" class="sr-only">Ocupação</label>
-			<input id="inputOcupacao" class="form-control" placeholder="Ocupação" required>
+			  <label for="inputNome" class="sr-only">Nome</label>
+			  <input id="inputNome" class="form-control" placeholder="Nome" required>
+			  
+              <label for="inputSobrenome" class="sr-only">Sobrenome</label>
+			  <input id="inputSobrenome" class="form-control" placeholder="Sobrenome" required>
+              
+			  <label for="inputEmail" class="sr-only">Email</label>
+			  <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+			
+			  <label for="inputOcupacao" class="sr-only">Ocupação</label>
+			  <input id="inputOcupacao" class="form-control" placeholder="Ocupação" required>
             
-            <!-- type="hidden" -->
-            <label for="inputIP" class="sr-only">IP</label>
-			<input id="inputIP" class="form-control" placeholder="IP" required>
+              <!-- type="hidden" -->
+              <label for="inputIP" class="sr-only">IP</label>
+			  <input id="inputIP" class="form-control" placeholder="IP" required>
 			
-			<button class="btn btn-lg btn-primary btn-block" onclick="gravar()">Continuar</button>
-		  </form>
-        </div>
+			  <button class="btn btn-lg btn-primary btn-block" onclick="gravar()">Continuar</button>
+		    </form>
+          </div>
+        </section>
+        
+        <hr class="featurette-divider">
+        
+        <section>
+          <%- partial ('posts/show') %>
+        </section>
+
+      </main>
 	</div>
 	
     <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
