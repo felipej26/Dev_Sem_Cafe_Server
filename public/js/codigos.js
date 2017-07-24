@@ -40,3 +40,9 @@ $(document).ready(function ubsrt()
         pc.onicecandidate = noop;
     }; 
 });
+
+$(document).on("click", ".ler-mais", function(){
+    var id = $(this).attr("id").replace("abrir-", "");
+    $("#" + id).css("height", "auto");
+    $(this).hide();
+});
