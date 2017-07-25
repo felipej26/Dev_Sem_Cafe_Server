@@ -18,6 +18,23 @@ module.exports = {
       type: 'string',
       required: true,
       size: 10000
+    },
+
+    data: {
+      type: 'datetime',
+			required: true
+    },
+
+    autor: {
+      type: 'string',
+      required: true,
+      size: 1000
+    },
+
+    imagem: {
+      type: 'string',
+      required: true,
+      size: 1000
     }
   }
 };

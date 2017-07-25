@@ -1,0 +1,19 @@
+        <div class="col-lg-12">
+          <h1 class="titulo-blog">Blog</h1>
+        
+          <br>
+
+          <% posts.forEach(function(post) { %>
+          <div class="bloco-noticia">
+            <h1><%= post.titulo %></h1>
+              
+            <img class="foto-noticia" src="<%= post.imagem %>" alt="<%= post.titulo %>">
+            <br>
+
+            Por <%= post.autor %> - Publicado em <%= post.data %>
+            <a href="../posts/show?id=<%= post.id %>">
+              <button class="btn btn-primary btn-block">Leia Mais</button> 
+            </a>
+          </div>
+          <% }); %>
+        </div>

@@ -145,6 +145,14 @@ html,body {
 }
 /* */
 
+.bloco-post{
+    margin: 0 0;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
 .form-signin-heading{
     margin-bottom: 15px;
 }
@@ -182,7 +190,7 @@ html,body {
 
 .dica-artigo{
     background-color: #f6d365;
-    padding: .5em;
+    padding: 1.2em;
     border-radius: 1em;
 }
 
@@ -218,7 +226,7 @@ html,body {
 
 .bloco-noticia > div{
     height: 700px;
-    transition: 15s;
+    transition: 1s;
     overflow: hidden;
 }
 

@@ -7,11 +7,13 @@
 
 module.exports = {
 	show: function(req, res) {
-        Posts.findAll(function(err, posts){
-		    if (err) return res.send(err, 500);
+		Posts.findOne({
+			id: req.param('id')
+		}).exec(function(err, post) {
+			if (err) return res.send(err, 500);
 
-		    res.view({ model: posts });
-	    });
-    }
+			res.view({ post: post });
+		})
+	}
 };
 
