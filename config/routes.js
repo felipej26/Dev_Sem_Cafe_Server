@@ -34,7 +34,9 @@ module.exports.routes = {
 
   '/': 'home.index',
   
-  'get /home': 'home.index'
+  'get /home': 'home.index',
+
+  'get /home/index': 'home.index'
 
   /***************************************************************************
   *                                                                          *

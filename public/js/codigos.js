@@ -5,13 +5,12 @@ function gravar() {
     var sobrenome = document.getElementById("inputSobrenome");
     var email = document.getElementById("inputEmail");
     
-
     var params = "nome=" + nome.value +
     "&sobrenome=" + sobrenome.value + 
     "&email=" + email.value +
     "&ip=" + ip;
 
-    xhr.open('POST', 'usuarios', true);
+    xhr.open('POST', 'usuarios/', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onload = function () { };
     xhr.send(params);
@@ -19,7 +18,6 @@ function gravar() {
     nome.innerHTML = "";
     sobrenome.innerHTML = "";
     email.innerHTML = "";
-    
 }
 
 var ip;
