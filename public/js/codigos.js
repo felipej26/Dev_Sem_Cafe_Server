@@ -13,11 +13,16 @@ function gravar() {
     "&sobrenome=" + sobrenome.value + 
     "&email=" + email.value +
     "&ip=" + ip;
-    
 
-    xhr.open('POST', '../usuarios/', true);
+    xhr.onreadystatechange = function(){
+        
+        console.log(xhr.responseText);
+        if(this.readyState == 4 && (this.status >= 200 && this.status <= 206)){
+            location.href = "/documents/Tudo o Que Você Precisa Saber Para Organizar Um Hackaton.pdf";
+        }
+    }
+    xhr.open('POST', '../../usuarios/', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-    xhr.onload = function () { };
     xhr.send(params);
 
     nome.innerHTML = "";
