@@ -27,12 +27,6 @@ module.exports = {
       size: 1000
     },
 
-    ocupacao: {
-      type: 'string',
-      required: true,
-			size: 1000
-    },
-
     ip: {
       type: 'string',
       required: true,
