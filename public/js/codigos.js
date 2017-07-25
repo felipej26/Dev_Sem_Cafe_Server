@@ -14,7 +14,7 @@ function gravar() {
     "&email=" + email.value +
     "&ip=" + ip;
 
-    xhr.open('POST', 'http://www.devsemcafe.com.br/usuarios/', false);
+    xhr.open('POST', '../usuarios/', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onload = function () { };
     xhr.send(params);
