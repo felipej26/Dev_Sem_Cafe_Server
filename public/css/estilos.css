@@ -17,7 +17,7 @@ body {
 
 form {
     border: 1px solid #CCC;
-    border-radius: 25px;
+    border-radius: 0.5em;
     padding: 1em;
     width: 60%;
     margin: auto;
@@ -28,15 +28,17 @@ h1 {
     color: black;
 }
 
+h2 {
+    font-size: 1.5em;
+}
+
 .footer {
     background-color: #000;
     color: #FFF;
     margin-top: 1em;
     padding: 0.5em;
-}
-
-.footer {
-    font-size: 3em;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 main a {
@@ -164,12 +166,10 @@ html,body {
 }
 
 .bloco-noticia{
-    margin: 0 0;
-    width: 100%;
-    /* Para ver as bordas do formulário */
+    margin: 0 20px;
     padding: 1em;
     border: 1px solid #CCC;
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
 
 .foto-noticia {
@@ -224,10 +224,8 @@ html,body {
     margin: 15px 0;
 }
 
-.bloco-noticia > div{
-    height: 700px;
-    transition: 1s;
-    overflow: hidden;
+.texto-post {
+    margin: 15px;
 }
 
 @-webkit-keyframes aparece {
