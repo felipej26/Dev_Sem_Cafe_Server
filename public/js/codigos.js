@@ -13,6 +13,7 @@ function gravar() {
     "&sobrenome=" + sobrenome.value + 
     "&email=" + email.value +
     "&ip=" + ip;
+    
 
     xhr.open('POST', '../usuarios/', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
