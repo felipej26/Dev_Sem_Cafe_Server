@@ -3,7 +3,7 @@
       <main>
         <section >    
           <div class="col-lg-8">
-            Depois de quantas xícaras o café já não faz efeito? O Blog Dev sem café veio para te dar aquela energia 
+            Depois de quantas xícaras o café já não faz efeito? O Blog Dev sem Café veio para te dar aquela energia 
             que faltava. Temos como intuito ser o parceiro diário dos profissionais, estudantes e aspirantes 
             a programadores.  
             <br>
@@ -42,9 +42,25 @@
 			        </div>
 
               <div class="form-group">
-			          <label for="inputOcupacao" class="sr-only">Ocupação</label>
-			          <input id="inputOcupacao" class="form-control" placeholder="Ocupação" required>
-			        </div>
+                <label for="inputOcupacao" class="sr-only">Ocupação</label>
+                
+                <select id="inputOcupacao" class="form-control" placeholder="Ocupação" required>
+                    <option disabled selected value="">Ocupação</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="desenvolvedorsistemas">Desenvolvedor de Sistemas</option>
+                    <option value="analistadeti">Analista TI/Infra</option>
+                    <option value="analistadedados">Analista de Dados</option>
+                    <option value="estagiario">Estagiário</option>
+                    <option value="outros">Outros</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="inputAceita" class="sr-only">Aceito receber mais conteúdo</label>
+                
+                <INPUT TYPE="checkbox" NAME="ACEITA" VALUE="op1" required> Aceito receber mais conteúdo
+
+              </div>
 			        
               <button class="btn btn-lg btn-primary btn-block" onclick="gravar()">Continuar</button>
 		        </form>
