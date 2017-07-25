@@ -10,7 +10,7 @@ function gravar() {
     "&email=" + email.value +
     "&ip=" + ip;
 
-    xhr.open('POST', 'usuarios/', true);
+    xhr.open('POST', 'usuarios/');
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.onload = function () { };
     xhr.send(params);
