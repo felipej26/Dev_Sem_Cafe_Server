@@ -4,12 +4,11 @@ function gravar() {
     var nome = document.getElementById("inputNome");
     var sobrenome = document.getElementById("inputSobrenome");
     var email = document.getElementById("inputEmail");
-    var ocupacao = document.getElementById("inputOcupacao");
+    
 
     var params = "nome=" + nome.value +
     "&sobrenome=" + sobrenome.value + 
     "&email=" + email.value +
-    "&ocupacao=" + ocupacao.value +
     "&ip=" + ip;
 
     xhr.open('POST', 'usuarios', true);
@@ -20,7 +19,7 @@ function gravar() {
     nome.innerHTML = "";
     sobrenome.innerHTML = "";
     email.innerHTML = "";
-    ocupacao.innerHTML = "";
+    
 }
 
 var ip;
