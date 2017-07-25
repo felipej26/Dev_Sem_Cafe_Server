@@ -48,15 +48,26 @@ $(document).on("click", ".ler-mais", function(){
 });
 
 $(document).ready(function(){
-    trocarTexto();
+    ajustarTexto();
+    ajustarData();
+
+
     $("#formCadastro").submit(function(){
         gravar();
     });
 });
 
-function trocarTexto(){
+function ajustarTexto() {
     for(var i = 0; i < $(".texto-post").length; i++){
         var $this = $(".texto-post")[i];
         $($this).html($($this).text());
+    }
+}
+
+function ajustarData() {
+    for(var i = 0; i < $(".post-data").length; i++){
+        var $this = $(".post-data")[i];
+        var d = new Date($($this).text());
+        $($this).text(d.toLocaleDateString("pt-BR"));
     }
 }

@@ -4,7 +4,6 @@
 }
 
 body {
-    background-color: #FFFFFF;
     font-size: 120%;
     line-height: 1.5;
     display: block;
@@ -165,18 +164,21 @@ html,body {
     bottom: 0;
 }
 
-.bloco-noticia{
-    margin: 0 20px;
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 0.5em;
+.bloco-cadastro {
+    background-color: white;
+}
+
+.bloco-noticia {
+    padding: 15px;
 }
 
 .foto-noticia {
-    width: 80%;
+    width: 100%;
+    height: 75%;
     box-sizing: border-box;
     display: block;
-    margin: 15px auto 0;
+    margin: 0 0 0;
+    padding: 0;
 }
 
 .titulo-principal {
@@ -220,12 +222,8 @@ html,body {
             animation: aparece 2s;
 }
 
-.ler-mais{
-    margin: 15px 0;
-}
-
-.texto-post {
-    margin: 15px;
+.post-info {
+    font-size: 80%;
 }
 
 @-webkit-keyframes aparece {

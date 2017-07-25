@@ -1,10 +1,8 @@
 
-            <h1><%= post.titulo %></h1>
-            
             <img class="foto-noticia" src="<%= post.imagem %>" alt="<%= post.titulo %>">
             <br>
 
-            Por <%= post.autor %> - Publicado em <%= post.data %>
+            Por <%= post.autor %> - Publicado em <span class="post-data"><%= post.data %></span>
             <br>
             <br>
 
@@ -13,6 +11,6 @@
             </div>
             
             <div class="dica-artigo">
-            <p>Gostou? Não esqueça de se <a href="../home/index">cadastrar</a> para acessar artigos 
-            mais incríveis sobre este tema e muito mais ;)</p>
+            <p>Gostou? Não esqueça de se <a href="../home/index">cadastrar</a> para acessar mais artigos 
+            incríveis sobre este tema e muito mais ;)</p>
             </div>

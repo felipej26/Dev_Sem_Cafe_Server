@@ -4,16 +4,10 @@
           <br>
 
           <% posts.forEach(function(post) { %>
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bloco-noticia">
-            <h2><%= post.titulo %></h2>
-              
-            <img class="foto-noticia" src="<%= post.imagem %>" alt="<%= post.titulo %>">
-            <br>
-
-            Por <%= post.autor %> - Publicado em <%= post.data %>
-            <a href="../posts/show?id=<%= post.id %>">
-              <button class="btn btn-primary btn-block">Leia Mais</button> 
-            </a>
-          </div>
+          <a href="../posts/show?id=<%= post.id %>">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bloco-noticia">
+              <img class="foto-noticia" src="<%= post.imagem %>" alt="<%= post.titulo %>">
+            </div>
+          </a>
           <% }); %>
         </div>
