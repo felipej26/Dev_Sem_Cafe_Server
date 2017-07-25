@@ -16,7 +16,7 @@ function gravar() {
 
     xhr.onreadystatechange = function(){
         
-        console.log(xhr.responseText);
+        alert(this.readyState + " - " + this.status + " - " + xhr.responseText);
         if(this.readyState == 4 && (this.status >= 200 && this.status <= 206)){
             location.href = "/documents/Tudo o Que Você Precisa Saber Para Organizar Um Hackaton.pdf";
         }
