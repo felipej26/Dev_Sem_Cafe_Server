@@ -1,3 +1,7 @@
+$(document).on("submit", "#formCadastro", function(){
+    gravar();
+});
+
 function gravar() {
     var xhr = new XMLHttpRequest();
 
