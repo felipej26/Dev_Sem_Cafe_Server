@@ -1,7 +1,3 @@
-$(document).on("submit", "#formCadastro", function(){
-    gravar();
-});
-
 function gravar() {
 
     alert('Iniciou gravar()');
@@ -63,6 +59,9 @@ $(document).on("click", ".ler-mais", function(){
 
 $(document).ready(function(){
     trocarTexto();
+    $("#formCadastro").submit(function(){
+        gravar();
+    });
 });
 
 function trocarTexto(){
@@ -71,3 +70,5 @@ function trocarTexto(){
         $($this).html($($this).text());
     }
 }
+
+alert("AAAA");
