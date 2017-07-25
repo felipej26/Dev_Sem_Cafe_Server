@@ -53,3 +53,14 @@ $(document).on("click", ".ler-mais", function(){
     $("#" + id).css("height", "auto");
     $(this).hide();
 });
+
+$(document).ready(function(){
+    trocarTexto();
+});
+
+function trocarTexto(){
+    for(var i = 0; i < $(".texto-post").length; i++){
+        var $this = $(".texto-post")[i];
+        $($this).html($($this).text());
+    }
+}

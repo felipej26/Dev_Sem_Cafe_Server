@@ -31,21 +31,12 @@ module.exports.routes = {
   * `assets` directory)                                                      *
   *                                                                          *
   ***************************************************************************/
-
-/*
+  
   '/': 'home.index',
   
   'get /home': 'home.index',
 
   'get /home/index': 'home.index'
-*/
-  '/': {
-    view: 'home'
-  },
-
-  'get /home': {
-    view: 'home'
-  }
 
   /***************************************************************************
   *                                                                          *
