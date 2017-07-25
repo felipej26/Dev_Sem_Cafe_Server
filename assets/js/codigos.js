@@ -1,7 +1,4 @@
 function gravar() {
-
-    alert('Iniciou gravar()');
-
     var xhr = new XMLHttpRequest();
 
     var nome = document.getElementById("inputNome");
@@ -13,11 +10,7 @@ function gravar() {
     "&email=" + email.value +
     "&ip=" + ip;
 
-    alert('preparando');
-
     xhr.onreadystatechange = function(){
-        
-        alert(this.readyState + " - " + this.status + " - " + xhr.responseText);
         if(this.readyState == 4 && (this.status >= 200 && this.status <= 206)){
             location.href = "/documents/Tudo o Que Você Precisa Saber Para Organizar Um Hackaton.pdf";
         }
@@ -25,8 +18,6 @@ function gravar() {
     xhr.open('POST', '../../usuarios/', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send(params);
-
-    alert('Enviou dados');
 
     nome.innerHTML = "";
     sobrenome.innerHTML = "";
@@ -70,5 +61,3 @@ function trocarTexto(){
         $($this).html($($this).text());
     }
 }
-
-alert("AAAA");
