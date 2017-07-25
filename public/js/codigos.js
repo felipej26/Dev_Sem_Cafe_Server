@@ -3,6 +3,9 @@ $(document).on("submit", "#formCadastro", function(){
 });
 
 function gravar() {
+
+    alert('Iniciou gravar()');
+
     var xhr = new XMLHttpRequest();
 
     var nome = document.getElementById("inputNome");
@@ -14,6 +17,8 @@ function gravar() {
     "&email=" + email.value +
     "&ip=" + ip;
 
+    alert('preparando');
+
     xhr.onreadystatechange = function(){
         
         alert(this.readyState + " - " + this.status + " - " + xhr.responseText);
@@ -24,6 +29,8 @@ function gravar() {
     xhr.open('POST', '../../usuarios/', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhr.send(params);
+
+    alert('Enviou dados');
 
     nome.innerHTML = "";
     sobrenome.innerHTML = "";
