@@ -10,7 +10,7 @@ module.exports = {
         Posts.find().exec(function(err, posts){
 		    if (err) return res.send(err, 500);
 			
-			res.view({ posts: posts });
+			res.view({ posts: posts, ip: req.ip });
 	    });
     }
 };
