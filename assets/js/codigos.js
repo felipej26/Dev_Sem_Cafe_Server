@@ -1,9 +1,32 @@
-function gravar() {
-    var xhr = new XMLHttpRequest();
 
-    var nome = document.getElementById("inputNome");
-    var sobrenome = document.getElementById("inputSobrenome");
-    var email = document.getElementById("inputEmail");
+document.getElementById("btnCadastrar").addEventListener("click", function () {
+
+    if (document.getElementById("inputNome").value != "" &&
+        document.getElementById("inputSobrenome").value != "" &&
+        document.getElementById("inputEmail").value != "") {
+        
+        gravar(
+            document.getElementById("inputNome"), 
+            document.getElementById("inputSobrenome"),
+            document.getElementById("inputEmail"));
+    }
+});
+
+document.getElementById("btnCadastrarPopUp").addEventListener("click", function () {
+
+    if (document.getElementById("inputNomePopUp").value != "" &&
+        document.getElementById("inputSobrenomePopUp").value != "" &&
+        document.getElementById("inputEmailPopUp").value != "") {
+        
+        gravar(
+            document.getElementById("inputNomePopUp"), 
+            document.getElementById("inputSobrenomePopUp"),
+            document.getElementById("inputEmailPopUp"));
+    }
+});
+
+function gravar(nome, sobrenome, email) {
+    var xhr = new XMLHttpRequest();
     
     var params = "nome=" + nome.value +
     "&sobrenome=" + sobrenome.value + 
@@ -26,37 +49,26 @@ function gravar() {
 
 var ip;
 
-$(document).ready(function ubsrt() {
-  	window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;  
-	var pc = new RTCPeerConnection({iceServers:[]}), 
-	noop = function(){}; 
-     
-   	pc.createDataChannel("");  
-	pc.createOffer(pc.setLocalDescription.bind(pc), noop);   
-    pc.onicecandidate = function(ice){ 
-   	    if(!ice || !ice.candidate || !ice.candidate.candidate)  return;
-        ip = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(ice.candidate.candidate)[1];
-
-        pc.onicecandidate = noop;
-    }; 
-});
-
-$(document).on("click", ".ler-mais", function(){
-    var id = $(this).attr("id").replace("abrir-", "");
-    $("#" + id).css("height", "auto");
-    $(this).hide();
-});
+function getIP(json) {
+    ip = json.ip;
+}
 
 $(document).ready(function(){
-    trocarTexto();
-    $("#formCadastro").submit(function(){
-        gravar();
-    });
+    ajustarTexto();
+    ajustarData();
 });
 
-function trocarTexto(){
+function ajustarTexto() {
     for(var i = 0; i < $(".texto-post").length; i++){
         var $this = $(".texto-post")[i];
         $($this).html($($this).text());
+    }
+}
+
+function ajustarData() {
+    for(var i = 0; i < $(".post-data").length; i++){
+        var $this = $(".post-data")[i];
+        var d = new Date($($this).text());
+        $($this).text(d.toLocaleDateString("pt-BR"));
     }
 }

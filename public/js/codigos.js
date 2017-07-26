@@ -1,22 +1,32 @@
 
-var form = document.getElementById("formCadastro");
-
 document.getElementById("btnCadastrar").addEventListener("click", function () {
 
     if (document.getElementById("inputNome").value != "" &&
         document.getElementById("inputSobrenome").value != "" &&
         document.getElementById("inputEmail").value != "") {
         
-        gravar();
+        gravar(
+            document.getElementById("inputNome"), 
+            document.getElementById("inputSobrenome"),
+            document.getElementById("inputEmail"));
     }
 });
 
-function gravar() {
-    var xhr = new XMLHttpRequest();
+document.getElementById("btnCadastrarPopUp").addEventListener("click", function () {
 
-    var nome = document.getElementById("inputNome");
-    var sobrenome = document.getElementById("inputSobrenome");
-    var email = document.getElementById("inputEmail");
+    if (document.getElementById("inputNomePopUp").value != "" &&
+        document.getElementById("inputSobrenomePopUp").value != "" &&
+        document.getElementById("inputEmailPopUp").value != "") {
+        
+        gravar(
+            document.getElementById("inputNomePopUp"), 
+            document.getElementById("inputSobrenomePopUp"),
+            document.getElementById("inputEmailPopUp"));
+    }
+});
+
+function gravar(nome, sobrenome, email) {
+    var xhr = new XMLHttpRequest();
     
     var params = "nome=" + nome.value +
     "&sobrenome=" + sobrenome.value + 
