@@ -38,8 +38,9 @@ function gravar() {
 }
 
 var ip;
+getUserIP();
 
-$(document).ready(function ubsrt() {
+function getUserIP() {
   	window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;  
 	var pc = new RTCPeerConnection({iceServers:[]}), 
 	noop = function(){}; 
@@ -52,13 +53,7 @@ $(document).ready(function ubsrt() {
 
         pc.onicecandidate = noop;
     }; 
-});
-
-$(document).on("click", ".ler-mais", function(){
-    var id = $(this).attr("id").replace("abrir-", "");
-    $("#" + id).css("height", "auto");
-    $(this).hide();
-});
+}
 
 $(document).ready(function(){
     ajustarTexto();
