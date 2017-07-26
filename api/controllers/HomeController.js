@@ -10,7 +10,9 @@ module.exports = {
         Posts.find().exec(function(err, posts){
 		    if (err) return res.send(err, 500);
 			
-			res.view({ posts: posts, ip: req.ip });
+			var ip = req.headers["X-Forwarded-For"] || req.connection.remoteAddress;
+
+			res.view({ posts: posts, ip: ip });
 	    });
     }
 };
