@@ -7,11 +7,21 @@
 
 module.exports = {
 	index: function(req, res) {
-        Posts.find().exec(function(err, posts){
+        Posts.find()
+		.sort('id DESC')
+		.exec(function(err, posts){
 		    if (err) return res.send(err, 500);
 
 			res.view({ posts: posts });
 	    });
-    }
+    },
+
+	sobre: function(req, res) {
+        res.view();
+    },
+
+	acervo: function(req, res) {
+		res.view();
+	}
 };
 

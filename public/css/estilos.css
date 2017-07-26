@@ -22,6 +22,15 @@ form {
     margin: auto;
 }
 
+.foto-capa {
+    width: 100%;
+}
+
+#cadastroPopUp {
+    width: 100%;
+    border: none;
+}
+
 h1 {
     font-size: 3em;
     color: black;
@@ -202,6 +211,51 @@ html,body {
     margin-bottom: 0px;
 }
 
+.navbar .foto-home{
+    height: 100%;
+    margin: auto;
+}
+
+#nav-header{
+    margin: 20px 0 0; 
+}
+
+#nav-header .nav > li > a{
+    padding: 8px 10px;    
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.nav > li{
+    padding: 23px 15px;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+}
+
+.container-fluid{
+    text-align: center;
+}
+
+.navbar-brand{
+    padding: 0;
+    width: 30%;
+    height: 80px;
+    position: absolute;
+}
+
+.foto-landing {
+    width: 100%;
+}
+
 .palavras-home {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
@@ -226,38 +280,13 @@ html,body {
     font-size: 80%;
 }
 
-@-webkit-keyframes aparece {
-    from {
-        opacity: 0;
-        transform: scale(0.001);
-    }
-}
-@keyframes aparece {
-    from {
-        opacity: 0;
-        transform: scale(0.001);
-    }
-}
-@keyframes flutua {
-    from {
-        top: -5px;
-    }
-    to {
-        top: 5px;
-    }
-}
-@-webkit-keyframes flutua {
-    from {
-        top: -5px;
-    }
-    to {
-        top: 5px;
-    }
-}
-
 @media screen and (min-width:1200px) {
     form {
         width: 100%;
+    }
+
+    #cadastroFixo {
+        margin-top: 15px;
     }
 }
 
@@ -295,5 +324,16 @@ html,body {
     .codigo-limpo {
         left: 20%;
         transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.20);
+    }
+}
+
+@media screen and (max-width:580px){
+    .navbar-brand{
+        width: 100%;
+        position: relative;
+    }
+
+    .nav > li {
+        padding: 13px 10px;
     }
 }

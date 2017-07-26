@@ -36,7 +36,11 @@ module.exports.routes = {
   
   'get /home': 'home.index',
 
-  'get /home/index': 'home.index'
+  'get /home/index': 'home.index',
+
+  'get /sobre': 'home.sobre',
+
+  'get /acervo': 'home.acervo'
 
   /***************************************************************************
   *                                                                          *

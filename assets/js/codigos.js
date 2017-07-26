@@ -12,7 +12,7 @@ function gravar() {
 
     xhr.onreadystatechange = function(){
         if(this.readyState == 4 && (this.status >= 200 && this.status <= 206)){
-            location.href = "/documents/Tudo o Que Você Precisa Saber Para Organizar Um Hackaton.pdf";
+            location.href = "/acervo";
         }
     }
     xhr.open('POST', '../../usuarios/', true);

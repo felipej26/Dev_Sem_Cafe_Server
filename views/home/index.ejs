@@ -1,69 +1,15 @@
 
-      <!--
       <div class="col-lg-12">
         <img class="foto-capa" src="../../images/home.jpg" alt="Logo Dev Sem Café">
       </div>
-      -->
-
-      <hr class="featurette-divider">
       
       <main>
         <section >    
-          <div class="col-lg-8">
-            Depois de quantas xícaras o café já não faz efeito? O Blog Dev sem Café veio para te dar aquela energia 
-            que faltava. Temos como intuito ser o parceiro diário dos profissionais, estudantes e aspirantes 
-            a programadores.  
-            <br>
-            <br>
-            Temos como pilares a Identificação, Informação e Life Style. 
-            <br>
-            <br>
-            Possuímos como objetivo acompanhar, registrar 
-            e identificar como a tecnologia e técnicas do mundo de hoje podem impactar no nosso dia a dia e no 
-            desenvolvimento pessoal e profissional. 
-            <br>
-            <br>
-            Geramos um conteúdo atual e assertivo para a vida dos desenvolvedores, 
-            que seguem um estilo de vida  desbravador, assuntos modernos e que sempre querem se manter atualizados. 
-            <br>
-            <br>
-            &lt;Seja um Dev em eterno desenvolvimento e desenvolva-se com a gente!> 
-          </div>
-
-          <div class="col-lg-4 bloco-cadastro">
-		        <form id="formCadastro" onsubmit="return false;">
-			        <h2 class="form-signin-heading">Cadastre-se e acesse materiais exclusivos!</h2>
-              <div class="form-group">
-                <label for="inputNome" class="sr-only">Nome</label>
-                <input id="inputNome" class="form-control" placeholder="Nome" required>
-              </div>
-			  
-              <div class="form-group">
-                <label for="inputSobrenome" class="sr-only">Sobrenome</label>
-			          <input id="inputSobrenome" class="form-control" placeholder="Sobrenome" required>
-              </div>
-
-              <div class="form-group">
-			          <label for="inputEmail" class="sr-only">Email</label>
-			          <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
-			        </div>
-
-              <!--
-              <div class="form-group">
-                <label for="inputAceita" class="sr-only"> Aceito receber mais conteúdo</label>
-                <input type="checkbox" value="op1" required> Aceito receber mais conteúdo
-              </div>
-			        -->
-              
-              <button id="btnCadastrar" class="btn btn-lg btn-primary btn-block">Cadastrar</button>
-		        </form>
+          <div class="col-lg-12">
+            <hr class="featurette-divider">
           </div>
         </section>
-
-        <div class="col-lg-12">
-          <hr class="featurette-divider">
-        </div>
-
+        
         <section>
           <%- partial ('../posts/showall', {posts: posts}) %>
         </section>
