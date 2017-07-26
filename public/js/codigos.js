@@ -1,3 +1,16 @@
+
+var form = document.getElementById("formCadastro");
+
+document.getElementById("btnCadastrar").addEventListener("click", function () {
+
+    if (document.getElementById("inputNome").value != "" &&
+        document.getElementById("inputSobrenome").value != "" &&
+        document.getElementById("inputEmail").value != "") {
+        
+        gravar();
+    }
+});
+
 function gravar() {
     var xhr = new XMLHttpRequest();
 
@@ -50,11 +63,6 @@ $(document).on("click", ".ler-mais", function(){
 $(document).ready(function(){
     ajustarTexto();
     ajustarData();
-
-
-    $("#formCadastro").submit(function(){
-        gravar();
-    });
 });
 
 function ajustarTexto() {
