@@ -7,13 +7,23 @@
 
 module.exports = {
 	show: function(req, res) {
+
+		var id = req.param('id');
+		console.log(id);
+		var reg = new RegExp('^[0-9]+$');
+		if (!reg.test(id)) {
+			console.log('Ta aqui');
+			return res.redirect('home');
+		}
+
+		console.log('Ta aqui 2');
+
 		Posts.findOne({
 			id: req.param('id')
 		}).exec(function(err, post) {
-			if (err) return res.send(err, 500);
+			if (err) return res.redirect('home');
 
 			res.view({ post: post });
 		})
 	}
 };
-
