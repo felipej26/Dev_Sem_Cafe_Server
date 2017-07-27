@@ -35,6 +35,12 @@ module.exports = {
       type: 'string',
       required: true,
       size: 1000
+    },
+
+    cabecalho: {
+      type: 'string',
+      required: true,
+      size: 1000
     }
   }
 };
