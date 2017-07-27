@@ -40,7 +40,9 @@ module.exports.routes = {
 
   'get /sobre': 'home.sobre',
 
-  'get /acervo': 'home.acervo'
+  'get /acervo': 'home.acervo',
+
+  'get /cadastrar': 'home.cadastrar'
 
   /***************************************************************************
   *                                                                          *

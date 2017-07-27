@@ -231,8 +231,8 @@ html,body {
 }
 
 .navbar-nav {
-    float:none;
-    margin:0 auto;
+    float: none;
+    margin: 7.5px -15px;
     display: inline-block;
     text-align: center;
 }
@@ -250,6 +250,13 @@ html,body {
     width: 30%;
     height: 80px;
     position: absolute;
+}
+
+#cadastroPagina {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
 }
 
 .foto-landing {

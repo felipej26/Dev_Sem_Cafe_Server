@@ -22,6 +22,10 @@ module.exports = {
 
 	acervo: function(req, res) {
 		res.view();
+	},
+
+	cadastrar: function(req, res) {
+		res.view();
 	}
 };
 
