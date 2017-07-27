@@ -15,6 +15,7 @@ body {
 }
 
 form {
+    text-align: center;
     border: 1px solid #CCC;
     border-radius: 0.5em;
     padding: 1em;
@@ -252,13 +253,6 @@ html,body {
     position: absolute;
 }
 
-#cadastroPagina {
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-    float: none;
-}
-
 .foto-landing {
     width: 100%;
 }
@@ -287,6 +281,10 @@ html,body {
     font-size: 80%;
 }
 
+#fotoCadastrar {
+    margin-bottom: 10px;
+}
+
 @media screen and (min-width:1200px) {
     form {
         width: 100%;
@@ -294,6 +292,12 @@ html,body {
 
     #cadastroFixo {
         margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    form {
+        width: 100%;
     }
 }
 
@@ -309,28 +313,6 @@ html,body {
 
     form {
         width: 100%;
-    }
-
-    .responsivo, .css3, .agilidade, .design, .html5 {
-        display: none;
-    }
-
-    .javascript {
-        left: 80%;
-    }
-
-    .acessibilidade {
-        left: 30%;
-    }
-
-    .eficiencia {
-        transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.10);
-        left: 65%;
-    }
-
-    .codigo-limpo {
-        left: 20%;
-        transform: translate(-50%, -50%) translateZ(2px) rotate(-10deg) scale(.20);
     }
 }
 
